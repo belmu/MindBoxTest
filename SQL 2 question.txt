@@ -1,0 +1,6 @@
+SELECT Products.ProductName, c.CategoryName
+FROM Products
+LEFT JOIN ProductCategoryJunction j
+ON Products.ProductId = j.ProductId
+LEFT JOIN Categories c
+ON j.CategoryId = c.CategoryId
